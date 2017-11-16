@@ -16,7 +16,7 @@ bool is_empty(PNODE pHead);
 
 int length_list(PNODE);
 
-int insert_list(PNODE, int, int);
+bool insert_list(PNODE, int, int);
 
 int delete_list(PNODE, int, int *);
 
@@ -32,9 +32,11 @@ int main(int argc, const char *argv[]) {
     int length = length_list(pHead);
     printf("链表长度为: %d \n", length);
 
+    insert_list(pHead, 4, 10);
+    traverse_list(pHead);
+
     sort_list(pHead);
 
-    traverse_list(pHead);
     return 0;
 }
 
@@ -124,4 +126,39 @@ void sort_list(PNODE pHead) {
             }
         }
     }
+}
+
+/**
+ * 链表插入数值
+ * @param pHead
+ * @param pos 位置,从1开始
+ * @param val 值
+ * @return
+ */
+bool insert_list(PNODE pHead, int pos, int val) {
+    int i = 0;
+    PNODE p = pHead;
+
+    // 保证 pos 在有效位置
+    while (NULL != p && i < pos-1) {
+        p = p->pNext;
+        ++i;
+    }
+
+    if (i > pos - 1 || NULL == p) {
+        return false;
+    }
+
+    PNODE pNew = (PNODE)malloc(sizeof(NODE));
+    if (NULL == pNew) {
+        printf("动态内存分配失败! \n");
+        exit(-1);
+    }
+
+    pNew->data = val;
+    PNODE q = p->pNext;
+    p->pNext = pNew;
+    pNew->pNext = q;
+
+    return true;
 }

@@ -1,3 +1,3 @@
-/Users/mrrightli/Documents/workplace/Data/Link/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/mrrightli/Documents/workplace/Data/Link/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/mrrightli/Documents/workplace/Data/Link/cmake-build-debug/CMakeFiles/Link.dir
+/Users/mrrightli/Documents/workplace/Data/DSA/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/mrrightli/Documents/workplace/Data/DSA/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/mrrightli/Documents/workplace/Data/DSA/cmake-build-debug/CMakeFiles/Link.dir

@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/mrrightli/Documents/workplace/Data/Link/cmake-build-debug"/>
+				<Option working_dir="/Users/mrrightli/Documents/workplace/Data/DSA/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/Link/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/Link/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/Link/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/Link/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/DSA/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/DSA/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/DSA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/DSA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/mrrightli/Documents/workplace/Data/Link/cmake-build-debug"/>
+				<Option working_dir="/Users/mrrightli/Documents/workplace/Data/DSA/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/Link/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/Link/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/Link/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/Link/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/DSA/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/DSA/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/DSA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/DSA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/mrrightli/Documents/workplace/Data/Link/cmake-build-debug"/>
+				<Option working_dir="/Users/mrrightli/Documents/workplace/Data/DSA/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/Link/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/Link/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/Link/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/Link/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/DSA/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/DSA/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/DSA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/DSA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Link">
-				<Option output="/Users/mrrightli/Documents/workplace/Data/Link/cmake-build-debug/Link" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/mrrightli/Documents/workplace/Data/Link/cmake-build-debug"/>
+				<Option output="/Users/mrrightli/Documents/workplace/Data/DSA/cmake-build-debug/Link" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/mrrightli/Documents/workplace/Data/DSA/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -52,15 +52,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/Link/cmake-build-debug/Makefile&quot;  VERBOSE=1 Link"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/Link/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/Link/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/Link/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/DSA/cmake-build-debug/Makefile&quot;  VERBOSE=1 Link"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/DSA/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/DSA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/DSA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Link/fast">
-				<Option output="/Users/mrrightli/Documents/workplace/Data/Link/cmake-build-debug/Link" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/mrrightli/Documents/workplace/Data/Link/cmake-build-debug"/>
+				<Option output="/Users/mrrightli/Documents/workplace/Data/DSA/cmake-build-debug/Link" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/mrrightli/Documents/workplace/Data/DSA/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -73,17 +73,17 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/Link/cmake-build-debug/Makefile&quot;  VERBOSE=1 Link/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/Link/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/Link/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/Link/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/DSA/cmake-build-debug/Makefile&quot;  VERBOSE=1 Link/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/DSA/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/DSA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/mrrightli/Documents/workplace/Data/DSA/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/mrrightli/Documents/workplace/Data/Link/main.c">
+		<Unit filename="/Users/mrrightli/Documents/workplace/Data/DSA/main.c">
 			<Option target="Link"/>
 		</Unit>
-		<Unit filename="/Users/mrrightli/Documents/workplace/Data/Link/CMakeLists.txt">
+		<Unit filename="/Users/mrrightli/Documents/workplace/Data/DSA/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
