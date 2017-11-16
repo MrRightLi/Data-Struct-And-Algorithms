@@ -19,13 +19,12 @@ int length_list(PNODE);
 int insert_list(PNODE, int, int);
 
 int delete_list(PNODE, int, int *);
-//bool is_empty(PNODE pHead);
 
+void sort_list(PNODE pHead);
 
 int main(int argc, const char *argv[]) {
     PNODE pHead = NULL;
     pHead = create_list();
-    traverse_list(pHead);
     if (is_empty(pHead)) {
         printf("链表为空 \n");
     }
@@ -33,7 +32,9 @@ int main(int argc, const char *argv[]) {
     int length = length_list(pHead);
     printf("链表长度为: %d \n", length);
 
+    sort_list(pHead);
 
+    traverse_list(pHead);
     return 0;
 }
 
@@ -70,6 +71,10 @@ PNODE create_list(void) {
     return pHead;
 }
 
+/**
+ * 遍历数组
+ * @param pHead
+ */
 void traverse_list(PNODE pHead) {
     PNODE p = pHead->pNext;
     while (p != NULL) {
@@ -100,4 +105,23 @@ int length_list(PNODE pHead) {
         p = p->pNext;
     }
     return len;
+}
+
+/**
+ * 链表的冒泡排序
+ * @param pHead
+ */
+void sort_list(PNODE pHead) {
+    int i, j ,t;
+    PNODE p, q;
+    int len = length_list(pHead);
+    for (i = 0, p = pHead->pNext; i < len - 1; ++i, p = p->pNext) {
+        for (j = i+1, q = p->pNext; j < len; ++j, q = q->pNext) {
+            if (p->data > q->data) {
+                t = p->data;
+                p->data = q->data;
+                q->data = t;
+            }
+        }
+    }
 }
