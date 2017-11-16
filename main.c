@@ -18,7 +18,7 @@ int length_list(PNODE);
 
 bool insert_list(PNODE, int, int);
 
-int delete_list(PNODE, int, int *);
+bool delete_list(PNODE, int, int *);
 
 void sort_list(PNODE pHead);
 
@@ -32,10 +32,13 @@ int main(int argc, const char *argv[]) {
     int length = length_list(pHead);
     printf("链表长度为: %d \n", length);
 
-    insert_list(pHead, 4, 10);
-    traverse_list(pHead);
+    // insert_list(pHead, 4, 10);
+    // traverse_list(pHead);
 
-    sort_list(pHead);
+    int del_val;
+    delete_list(pHead, 2, &del_val);
+
+    traverse_list(pHead);
 
     return 0;
 }
@@ -114,11 +117,11 @@ int length_list(PNODE pHead) {
  * @param pHead
  */
 void sort_list(PNODE pHead) {
-    int i, j ,t;
+    int i, j, t;
     PNODE p, q;
     int len = length_list(pHead);
     for (i = 0, p = pHead->pNext; i < len - 1; ++i, p = p->pNext) {
-        for (j = i+1, q = p->pNext; j < len; ++j, q = q->pNext) {
+        for (j = i + 1, q = p->pNext; j < len; ++j, q = q->pNext) {
             if (p->data > q->data) {
                 t = p->data;
                 p->data = q->data;
@@ -140,7 +143,7 @@ bool insert_list(PNODE pHead, int pos, int val) {
     PNODE p = pHead;
 
     // 保证 pos 在有效位置
-    while (NULL != p && i < pos-1) {
+    while (NULL != p && i < pos - 1) {
         p = p->pNext;
         ++i;
     }
@@ -149,7 +152,7 @@ bool insert_list(PNODE pHead, int pos, int val) {
         return false;
     }
 
-    PNODE pNew = (PNODE)malloc(sizeof(NODE));
+    PNODE pNew = (PNODE) malloc(sizeof(NODE));
     if (NULL == pNew) {
         printf("动态内存分配失败! \n");
         exit(-1);
@@ -159,6 +162,30 @@ bool insert_list(PNODE pHead, int pos, int val) {
     PNODE q = p->pNext;
     p->pNext = pNew;
     pNew->pNext = q;
+
+    return true;
+}
+
+bool delete_list(PNODE pHead, int pos, int *val) {
+    int i = 0;
+    PNODE p = pHead;
+
+    // 保证 pos 在有效位置
+    while (NULL != p && i < pos - 1) {
+        p = p->pNext;
+        ++i;
+    }
+
+    if (i > pos - 1 || NULL == p) {
+        return false;
+    }
+
+    PNODE q = p->pNext;
+    *val = p->data;
+
+    p->pNext = p->pNext->pNext;
+    free(q);
+    q == NULL;
 
     return true;
 }
