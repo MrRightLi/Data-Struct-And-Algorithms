@@ -43,6 +43,10 @@ int main(int argc, const char *argv[]) {
     return 0;
 }
 
+/**
+ * 新建链表
+ * @return
+ */
 PNODE create_list(void) {
     int len;
     int val;
@@ -166,6 +170,13 @@ bool insert_list(PNODE pHead, int pos, int val) {
     return true;
 }
 
+/**
+ * 链表删除数值
+ * @param pHead
+ * @param pos
+ * @param val
+ * @return
+ */
 bool delete_list(PNODE pHead, int pos, int *val) {
     int i = 0;
     PNODE p = pHead;
