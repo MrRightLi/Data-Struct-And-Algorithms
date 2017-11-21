@@ -1,6 +1,10 @@
 //
 // Created by MrRightli on 2017/11/16.
 //
+/*
+ * 应用:
+ * 函数调用,中断,表达式求值,内存分配,缓存处理,迷宫
+ */
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -44,6 +48,10 @@ int main(int argc, const char *argv[]) {
     traverse(&S);
 }
 
+/**
+ * 栈的初始化
+ * @param pS
+ */
 void init(PSTACK pS) {
     pS->pTop = (PNODE)malloc(sizeof(NODE));
     if (NULL == pS->pTop) {
@@ -55,6 +63,11 @@ void init(PSTACK pS) {
     }
 }
 
+/**
+ * 压栈
+ * @param pS
+ * @param val
+ */
 void push(PSTACK pS, int val) {
     PNODE pNew = (PNODE)malloc(sizeof(NODE));
     pNew->data = val;
@@ -62,6 +75,12 @@ void push(PSTACK pS, int val) {
     pS->pTop = pNew;
 }
 
+/**
+ * 出栈
+ * @param pS
+ * @param val
+ * @return
+ */
 bool pop(PSTACK pS, int *val) {
     if (empty(pS)) {
         return false;
@@ -74,9 +93,11 @@ bool pop(PSTACK pS, int *val) {
     r = NULL;
     return true;
 }
-
-void clear(PSTACK pS)
-{
+/**
+ * 请空栈
+ * @param pS
+ */
+void clear(PSTACK pS) {
     if (empty(pS)) {
         return;
     } else {
@@ -99,6 +120,10 @@ bool empty(PSTACK pS) {
         return false;
 }
 
+/**
+ * 遍历栈
+ * @param pS
+ */
 void traverse(PSTACK pS) {
     PNODE p = pS->pTop;
     while (p != pS->pBottom) {
