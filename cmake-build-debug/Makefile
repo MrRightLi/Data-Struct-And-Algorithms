@@ -123,32 +123,32 @@ Link/fast:
 	$(MAKE) -f CMakeFiles/Link.dir/build.make CMakeFiles/Link.dir/build
 .PHONY : Link/fast
 
-main.o: main.c.o
+Stack.o: Stack.c.o
 
-.PHONY : main.o
+.PHONY : Stack.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/Link.dir/build.make CMakeFiles/Link.dir/main.c.o
-.PHONY : main.c.o
+Stack.c.o:
+	$(MAKE) -f CMakeFiles/Link.dir/build.make CMakeFiles/Link.dir/Stack.c.o
+.PHONY : Stack.c.o
 
-main.i: main.c.i
+Stack.i: Stack.c.i
 
-.PHONY : main.i
+.PHONY : Stack.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/Link.dir/build.make CMakeFiles/Link.dir/main.c.i
-.PHONY : main.c.i
+Stack.c.i:
+	$(MAKE) -f CMakeFiles/Link.dir/build.make CMakeFiles/Link.dir/Stack.c.i
+.PHONY : Stack.c.i
 
-main.s: main.c.s
+Stack.s: Stack.c.s
 
-.PHONY : main.s
+.PHONY : Stack.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/Link.dir/build.make CMakeFiles/Link.dir/main.c.s
-.PHONY : main.c.s
+Stack.c.s:
+	$(MAKE) -f CMakeFiles/Link.dir/build.make CMakeFiles/Link.dir/Stack.c.s
+.PHONY : Stack.c.s
 
 # Help Target
 help:
@@ -159,9 +159,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... Link"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... Stack.o"
+	@echo "... Stack.i"
+	@echo "... Stack.s"
 .PHONY : help
 
 

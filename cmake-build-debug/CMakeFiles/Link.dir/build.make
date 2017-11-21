@@ -57,38 +57,38 @@ include CMakeFiles/Link.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Link.dir/flags.make
 
-CMakeFiles/Link.dir/main.c.o: CMakeFiles/Link.dir/flags.make
-CMakeFiles/Link.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mrrightli/Documents/workplace/Data/DSA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Link.dir/main.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Link.dir/main.c.o   -c /Users/mrrightli/Documents/workplace/Data/DSA/main.c
+CMakeFiles/Link.dir/Stack.c.o: CMakeFiles/Link.dir/flags.make
+CMakeFiles/Link.dir/Stack.c.o: ../Stack.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/mrrightli/Documents/workplace/Data/DSA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Link.dir/Stack.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/Link.dir/Stack.c.o   -c /Users/mrrightli/Documents/workplace/Data/DSA/Stack.c
 
-CMakeFiles/Link.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Link.dir/main.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mrrightli/Documents/workplace/Data/DSA/main.c > CMakeFiles/Link.dir/main.c.i
+CMakeFiles/Link.dir/Stack.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Link.dir/Stack.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/mrrightli/Documents/workplace/Data/DSA/Stack.c > CMakeFiles/Link.dir/Stack.c.i
 
-CMakeFiles/Link.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Link.dir/main.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mrrightli/Documents/workplace/Data/DSA/main.c -o CMakeFiles/Link.dir/main.c.s
+CMakeFiles/Link.dir/Stack.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Link.dir/Stack.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/mrrightli/Documents/workplace/Data/DSA/Stack.c -o CMakeFiles/Link.dir/Stack.c.s
 
-CMakeFiles/Link.dir/main.c.o.requires:
+CMakeFiles/Link.dir/Stack.c.o.requires:
 
-.PHONY : CMakeFiles/Link.dir/main.c.o.requires
+.PHONY : CMakeFiles/Link.dir/Stack.c.o.requires
 
-CMakeFiles/Link.dir/main.c.o.provides: CMakeFiles/Link.dir/main.c.o.requires
-	$(MAKE) -f CMakeFiles/Link.dir/build.make CMakeFiles/Link.dir/main.c.o.provides.build
-.PHONY : CMakeFiles/Link.dir/main.c.o.provides
+CMakeFiles/Link.dir/Stack.c.o.provides: CMakeFiles/Link.dir/Stack.c.o.requires
+	$(MAKE) -f CMakeFiles/Link.dir/build.make CMakeFiles/Link.dir/Stack.c.o.provides.build
+.PHONY : CMakeFiles/Link.dir/Stack.c.o.provides
 
-CMakeFiles/Link.dir/main.c.o.provides.build: CMakeFiles/Link.dir/main.c.o
+CMakeFiles/Link.dir/Stack.c.o.provides.build: CMakeFiles/Link.dir/Stack.c.o
 
 
 # Object files for target Link
 Link_OBJECTS = \
-"CMakeFiles/Link.dir/main.c.o"
+"CMakeFiles/Link.dir/Stack.c.o"
 
 # External object files for target Link
 Link_EXTERNAL_OBJECTS =
 
-Link: CMakeFiles/Link.dir/main.c.o
+Link: CMakeFiles/Link.dir/Stack.c.o
 Link: CMakeFiles/Link.dir/build.make
 Link: CMakeFiles/Link.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/mrrightli/Documents/workplace/Data/DSA/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable Link"
@@ -99,7 +99,7 @@ CMakeFiles/Link.dir/build: Link
 
 .PHONY : CMakeFiles/Link.dir/build
 
-CMakeFiles/Link.dir/requires: CMakeFiles/Link.dir/main.c.o.requires
+CMakeFiles/Link.dir/requires: CMakeFiles/Link.dir/Stack.c.o.requires
 
 .PHONY : CMakeFiles/Link.dir/requires
 
