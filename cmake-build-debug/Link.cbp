@@ -80,7 +80,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/mrrightli/Documents/workplace/Data/DSA/Stack.c">
+		<Unit filename="/Users/mrrightli/Documents/workplace/Data/DSA/Queue.c">
 			<Option target="Link"/>
 		</Unit>
 		<Unit filename="/Users/mrrightli/Documents/workplace/Data/DSA/CMakeLists.txt">
